@@ -44,6 +44,7 @@ mangopay.User.list()
 * `mangopay.User.Legal.create(userData) -> Promise<user>`
 * `mangopay.User.Natural.update(userId, userData) -> Promise<user>`
 * `mangopay.User.Legal.update(userId, userData) -> Promise<user>`
+* `mangopay.User.Mandate.list() -> Promise<[mandate]>`
 
 #### mangopay.Wallet
 * `mangopay.Wallet.get(walletId) -> Promise<wallet>`
@@ -116,6 +117,10 @@ mangopay.User.list()
 * `mangopay.Hook.update(hookId, hookData) -> Promise<hook>`
 * `mangopay.Hook.create(hookData) -> Promise<hook>`
 
+### mangopay.Mandate
+* `mangopay.Mandate.list() -> Promise<[mandate]>`
+* `mangopay.Mandate.get(mandateId) -> Promise<mandate>`
+
 
 ### user
 * `user.update(userData) -> Promise<user>`
@@ -128,6 +133,7 @@ mangopay.User.list()
 * `user.BankAccount.create(bankAccountData) -> Promise<bankAccount>`
 * `user.KYC.Document.list() -> Promise<[document]>`
 * `user.KYC.Document.create(documentKYCData) -> Promise<document>`
+* `user.Mandate.list() -> Promise<[mandate]>`
 
 ### wallet
 * `wallet.reload() -> Promise<wallet>`
@@ -152,6 +158,8 @@ mangopay.User.list()
 
 ### bankAccount
 * `bankAccount.reload() -> Promise<bankAccount>`
+* `bankAccount.Mandate.list() -> Promise<[mandate]>`
+* `bankAccount.Mandate.create(data) -> Promise<[mandate]>`
 
 ### payOut
 * `payOut.reload() -> Promise<payOut>`
@@ -177,3 +185,7 @@ mangopay.User.list()
 ### hook
 * `hook.reload() -> Promise<hook>`
 * `hook.update(data) -> Promise<hook>`
+
+### mandate
+* `mandate.reload() -> Promise<mandate>`
+* `mandate.cancel() -> Promise<mandate>`
