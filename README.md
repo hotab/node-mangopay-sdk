@@ -66,6 +66,9 @@ mangopay.User.list()
 #### mangopay.PayIn.DirectDebit.Web
 * `mangopay.PayIn.DirectDebit.Web.create(webDirectDebitPayInData) -> Promise<payIn>`
 
+#### mangopay.PayIn.DirectDebit.Direct
+* `mangopay.PayIn.DirectDebit.Web.create(userId, mandateId, directDebitViaDirectPayInData) -> Promise<payIn>`
+
 #### mangopay.PayIn.PreAuthorized.Direct
 * `mangopay.PayIn.PreAuthorized.Direct.create(directPreAuthorizedPayInData) -> Promise<payIn>`
 
@@ -134,6 +137,7 @@ mangopay.User.list()
 * `user.KYC.Document.list() -> Promise<[document]>`
 * `user.KYC.Document.create(documentKYCData) -> Promise<document>`
 * `user.Mandate.list() -> Promise<[mandate]>`
+* `user.PayIn.DirectDebit.Direct.create(mandateId, directDebitViaDirectPayInData) -> Promise<[mandate]>`
 
 ### wallet
 * `wallet.reload() -> Promise<wallet>`
