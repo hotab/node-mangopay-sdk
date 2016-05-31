@@ -132,6 +132,7 @@ mangopay.User.list()
 * `user.Wallet.create(data) -> Promise<[wallet]>`
 * `user.Wallet.list(Pagination) -> Promise<[wallet]>`
 * `user.Transaction.list(Pagination) -> Promise<[transaction]>`
+* `user.BankAccount.get(bankAccountId) -> Promise<[bankAccount]>`
 * `user.BankAccount.list(Pagination) -> Promise<[bankAccount]>`
 * `user.BankAccount.create(bankAccountData) -> Promise<bankAccount>`
 * `user.KYC.Document.list() -> Promise<[document]>`
