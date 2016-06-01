@@ -163,6 +163,7 @@ mangopay.User.list()
 
 ### bankAccount
 * `bankAccount.reload() -> Promise<bankAccount>`
+* `bankAccount.update(data) -> Promise<bankAccount>`
 * `bankAccount.Mandate.list() -> Promise<[mandate]>`
 * `bankAccount.Mandate.create(data) -> Promise<[mandate]>`
 
