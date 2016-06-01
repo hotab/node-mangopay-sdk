@@ -28,6 +28,7 @@
   "homepage": "https://github.com/vanwalj/node-mangopay-sdk#readme",
   "dependencies": {
     "bluebird": "3.0.6",
+    "debug": "^2.2.0",
     "joi": "7.0.1",
     "lodash": "3.10.1",
     "request": "2.67.0"
